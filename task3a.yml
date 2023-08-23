@@ -1,0 +1,31 @@
+- hosts: all
+  tasks:
+  - name: Update /etc/hosts file
+    lineinfile:
+      path: /etc/hosts
+      line: 159.223.172.53 centos1
+      create: yes
+
+  - name: Update /etc/hosts file
+    lineinfile:
+      path: /etc/hosts
+      line: 143.244.160.220 centos2
+      create: yes
+
+  - name: Update /etc/hosts file
+    lineinfile:
+      path: /etc/hosts
+      line: 159.223.172.243 centos3
+      create: yes
+
+  - name: Update /etc/hosts file
+    lineinfile:
+      path: /etc/hosts
+      line: 159.203.190.10 centos4
+      create: yes
+
+  - name: Update /etc/hosts file
+    lineinfile:
+      path: /etc/hosts
+      line: 198.211.110.77 centos5
+      create: yes  
