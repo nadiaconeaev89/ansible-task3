@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+  - name: Update the /etc/hosts file
+    lineinfile: 
+      path: /etc/hosts
+      line: "{{ ansible_default_ipv4.address }} {{ inventory_hostname }}"
+      create: yes
